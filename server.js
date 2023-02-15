@@ -17,6 +17,9 @@ app.use(bodyParser.urlencoded({
         extended: true
     }));
 // Routes
+app.get('/',(req,res) => {
+    res.send('APP IS RUNNING.')
+})
 app.use('/api/temperature',temperatureRoutes); 
 
 // Server
